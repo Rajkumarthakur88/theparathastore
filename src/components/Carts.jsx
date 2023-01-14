@@ -100,9 +100,7 @@ function Carts() {
                                     labelId="demo-simple-select-filled-label"
                                     id="demo-simple-select-filled"
                                 >
-                                    <MenuItem value="">
-                                        <em>None</em>
-                                    </MenuItem>
+                                    
                                     <MenuItem value={0}> <Button onClick={() => setDistance(0)}>Upto 5 km (₹0)</Button>  </MenuItem>
                                     <MenuItem value={15}><Button onClick={() => setDistance(15)}> 5-8 km (₹15)</Button> </MenuItem>
                                     <MenuItem value={25}><Button onClick={() => setDistance(25)}> 9-15 km (₹25)</Button></MenuItem>

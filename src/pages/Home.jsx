@@ -22,7 +22,7 @@ const Home = () => {
 
       <div className="home" style={{ backgroundImage: `url(${Banner})` }}>
         <div className="headerContainer">
-          <h1>Food Website</h1>
+          <h1>The Paratha Store</h1>
           <p>Best Food In India</p>
           <Link to="/menu">
             <button>ORDER NOW</button>

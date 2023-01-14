@@ -33,6 +33,9 @@ const CartSlice = createSlice({
         removeItem(state, action) {
             const remove = state.cartItems.filter((item) => item.id !== action.payload)
             state.cartItems = remove
+            toast.error(` Remove From Cart"`, {
+                autoClose: 600, position: "top-center"
+            })
             localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
         },
         decreaseQuantity(state, action) {
