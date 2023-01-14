@@ -48,13 +48,13 @@ const Contact = () => {
             <TableBody>
               <TableRow>
                 <TableCell>
-                  <SupportAgentIcon sx={{ color: "red", pt: 1 }} /> 1800-00-0000
+                  <SupportAgentIcon sx={{ color: "red", pt: 1 }} /> 123456789
                   (tollfree)
                 </TableCell>
               </TableRow>
               <TableRow>
                 <TableCell>
-                  <MailIcon sx={{ color: "skyblue", pt: 1 }} /> help@myrest.com
+                  <MailIcon sx={{ color: "skyblue", pt: 1 }} /> help@theparathastore.com
                 </TableCell>
               </TableRow>
               <TableRow>
