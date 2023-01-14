@@ -47,7 +47,7 @@ const Header = () => {
           <NavLink to={"/contact"}>Contact</NavLink>
         </li>
         <li>
-          <NavLink to={"/cart"}>Cart</NavLink>
+          <NavLink to={"/cart"}> <Cart /> </NavLink>
         </li>
       </ul>
     </Box>

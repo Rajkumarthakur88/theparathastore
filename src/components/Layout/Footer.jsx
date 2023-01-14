@@ -14,7 +14,7 @@ const Footer = () => {
           sx={{
             my: 3,
             "& svg": {
-              fontSize: "60px",
+              fontSize: "50px",
               cursor: "pointer",
               mr: 2,
             },

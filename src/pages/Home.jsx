@@ -12,9 +12,9 @@ const Home = () => {
 
   const dispatch = useDispatch()
 
-  useEffect(() => {
-    dispatch(fetchProducts())
-  }, [])
+  // useEffect(() => {
+  //   dispatch(fetchProducts())
+  // }, [])
 
 
   return (

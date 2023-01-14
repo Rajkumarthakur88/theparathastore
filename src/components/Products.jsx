@@ -1,6 +1,7 @@
 import React from "react";
 import { MenuList } from "../data/data";
 import Layout from "./../components/Layout/Layout";
+
 import {
     Box,
     Card,
@@ -15,11 +16,10 @@ import { toast } from "react-toastify";
 
 const Products = ({ product }) => {
     const dispatch = useDispatch()
-
-    const handleCart = () => {
+        const handleCart = () => {
         dispatch(addToCart(product))
-    }
-    
+    } 
+
     return (
         <Card sx={{ maxWidth: "390px", display: "flex", m: 2 }}>
             <CardActionArea>

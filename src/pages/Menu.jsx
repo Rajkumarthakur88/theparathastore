@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { MenuList } from "../data/data";
 import Layout from "./../components/Layout/Layout";
+import { fetchProducts } from "../store/MenuSlice";
+import CircularProgress from '@mui/material/CircularProgress';
 import {
   Box,
   Card,
@@ -15,14 +17,29 @@ import Products from "../components/Products";
 
 const Menu = () => {
 
-  const { products, isLoading } = useSelector(state => state.product)
+  const { products, isLoading, isError } = useSelector(state => state.product)
   const dispatch = useDispatch()
 
   const handleCart = () => {
     dispatch(addToCart())
   }
-  if(isLoading){
-    return <h1>Loading...</h1>
+  useEffect(() => {
+    dispatch(fetchProducts())
+  }, [])
+
+  if (isLoading) {
+    <Layout>
+    return <Box sx={{ padding: "100px 0px", display: 'flex', alignItems: "center", justifyContent: "center" }}>
+      <CircularProgress />
+    </Box>
+    </Layout>
+  }
+  if (isError) {
+    <Layout>
+    return <Box sx={{ marginTop: "100px", paddingTop: "100px", display: 'flex', alignItems: "center", justifyContent: "center" }}>
+      <h1>Something Went Wrong...</h1>
+    </Box>
+    </Layout>
   }
   return (
     <Layout>

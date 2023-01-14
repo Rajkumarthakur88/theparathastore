@@ -18,7 +18,7 @@ import {
 const Contact = () => {
   return (
     <Layout>
-      <Box sx={{ my: 5, ml: 10, "& h4": { fontWeight: "bold", mb: 2 } }}>
+      <Box sx={{ my: 5, ml: 5, "& h4": { fontWeight: "bold", mb: 2 } }}>
         <Typography variant="h4">Contact Us</Typography>
 
       </Box>
@@ -26,9 +26,10 @@ const Contact = () => {
         sx={{
           m: 3,
           width: "600px",
-          ml: 10,
+          ml: 8,
           "@media (max-width:600px)": {
-            width: "300px",
+            width: "250px",
+            ml: 5
           },
         }}
       >
