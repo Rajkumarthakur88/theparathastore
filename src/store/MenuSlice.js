@@ -31,7 +31,7 @@ const MenuSlice = createSlice({
 })
 export const fetchProducts = createAsyncThunk("fetch/products", async () => {
 
-    const response = await fetch(`http://localhost:3000/menulist`)
+    const response = await fetch(`https://theparathastore-json.onrender.com/menulist`)
     const data = await response.json()
     return data
 
