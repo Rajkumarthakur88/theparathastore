@@ -63,13 +63,13 @@ function Carts() {
 
                         <CardContent>
                             <Typography gutterBottom variant="h4" component="div" sx={{ color: "goldenrod", boxShadow: 5, p: 1, textAlign: "center", fontWeight: "700" }}>
-                                Your Items
+                                Cart Items
                             </Typography>
                             <Typography gutterBottom variant="h6" component="div" sx={{ boxShadow: 5, p: 1 }}>
-                                Total Items {cartItems.length}
+                                Total Items : {cartItems.length}
                             </Typography>
                             <Typography gutterBottom variant="h6" component="div" sx={{ boxShadow: 5, p: 1, width: 300 }}>
-                                Total: ₹{TotalPrice}
+                                Total Price: ₹{TotalPrice}
                             </Typography>
                         </CardContent>
 
