@@ -45,7 +45,7 @@ const CartSlice = createSlice({
                 localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
             }
             else if (state.cartItems[itemIndex].cartQuantity === 1) {
-                const remove = state.cartItems.filter((item) => item.id !== action.payload)
+                const remove = state.cartItems.filter((item) => item.id !== action.payload.id)
                 state.cartItems = remove
                 localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
             }
@@ -56,11 +56,6 @@ const CartSlice = createSlice({
                 state.cartItems[itemIndex].cartQuantity += 1;
                 localStorage.setItem("cartItems", JSON.stringify(state.cartItems));
             }
-            // else if (state.cartItems[itemIndex].cartQuantity === 1) {
-            //     const remove = state.cartItems.filter((item) => item.id !== action.payload)
-            //     state.cartItems = remove
-
-            // }
         },
         getTotal(state, action) {
             let { total, quantity } = state.cartItems.reduce((cartTotal, cartItem) => {
