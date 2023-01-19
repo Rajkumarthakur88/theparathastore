@@ -13,10 +13,10 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path={"/"} element={<Home />} />
-          <Route path={"index.html/about"} element={<About />} />
-          <Route path={"index.html/contact"} element={<Contact />} />
-          <Route path={"index.html/menu"} element={<Menu />} />
-          <Route path={"index.html/cart"} element={<Carts />} />
+          <Route path={"/about"} element={<About />} />
+          <Route path={"/contact"} element={<Contact />} />
+          <Route path={"/menu"} element={<Menu />} />
+          <Route path={"/cart"} element={<Carts />} />
         </Routes>
       </BrowserRouter>
       <ToastContainer />
